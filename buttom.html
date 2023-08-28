@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt=br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passaword View</title>
+    <input type="password" id="pwd">
+    <input type="checkbox" id="chk"> Ver Senha
+</head>
+<body>
+<script>
+    const pwd = document.getElementById("pwd") 
+    const chk = document.getElementById("chk")
+
+    chk.onchange = function(event) {
+        pwd.type = chk.checked ? "text" : "password"
+    }
+        /* 
+        PODERIA FAZER COM A NEGAÇÃO TAMBÉM (!!)
+
+        const pwd = document.getElementById("pwd");
+    const chk = document.getElementById("chk");
+
+    chk.onchange = function(event) {
+        pwd.type = !!chk.checked ? "text" : "password";
+        */
+</script>
+</body>
+</html>
